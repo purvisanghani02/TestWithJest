@@ -111,4 +111,27 @@ describe("UI test", () => {
     //to override data-testId in testId use configure
     // const h1 = screen.getByTestId("testid");
   });
+
+  //getByDisplayValue-------------------------------
+  test("get-By-DisplayValue testing", () => {
+    render(<App />);
+    const display = screen.getByDisplayValue("harvi");
+    expect(display).toBeInTheDocument();
+  });
+
+  test("radio btn testing", () => {
+    render(<App />);
+    const radio = screen.getByDisplayValue("male");
+    expect(radio).toBeInTheDocument();
+  });
+
+  //getByTitle-------------------------------
+  test("title testing", () => {
+    render(<App />);
+    const btn = screen.getByTitle("click me");
+    expect(btn).toBeInTheDocument();
+
+    const span = screen.getByTitle("chai aur code");
+    expect(span).toBeInTheDocument();
+  });
 });

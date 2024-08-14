@@ -73,9 +73,23 @@ function App() {
       </p>
 
       {/* getByTestId------------------- */}
-      {/* <button data-testid="testid">click me</button> */}
-      {/* <h1 data-testid="testid">hello react</h1> */}
-      <h1 element-id="testid">hello react</h1>
+      <button data-testid="testid">click me</button>
+      <h1 data-testid="testid">hello react</h1>
+      {/* <h1 element-id="testid">hello react</h1> */}
+
+      {/* getByDisplayValue------------------- */}
+      <input type="text" defaultValue={"harvi"} />
+      <br />
+      <br />
+      <textarea defaultValue={"textarea"} />
+      <br />
+      <input type="radio" defaultValue={"male"} />
+      <br />
+      {/* getByTitle------------------- */}
+      <button title="click me">click</button>
+      <span title="chai aur code" style={{ fontSize: "60px" }}>
+        &#9749;
+      </span>
     </div>
   );
 }
